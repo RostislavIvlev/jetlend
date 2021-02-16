@@ -1,0 +1,48 @@
+@import "../../scss/main.scss";
+
+.presentation-wrapper {
+    width: 100%;
+    display: flex;
+
+    &__col {
+        width: 50%;
+        height: 420px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+
+        &__col {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+}
+
+.video-section {
+    background: url("/assets/images/presentation.png") no-repeat center;
+    background-size: cover;
+}
+
+.presentation {
+    color: $white;
+    background-color: $green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 35px;
+        line-height: 41px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        max-width: 430px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 17px;
+        max-width: 430px;
+    }
+}
