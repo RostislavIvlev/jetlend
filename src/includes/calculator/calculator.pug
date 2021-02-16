@@ -1,0 +1,19 @@
+.calculator-wrapper
+  h2.calculator-wrapper__h2 Калькулятор заемщика
+  .calculator-wrapper__container
+    .calculator-wrapper__col.calculator
+      .calculator-input
+        label(for="#summ").calculator-input__label Желаемая сумма кредита
+        input(type="text" placeholder="1 000 000 руб" id="summ").calculator-input__input
+  
+      .calculator-input
+        label(for="#time").calculator-input__label Срок кредита
+        input(type="text" placeholder="5 мес." id="time").calculator-input__input
+
+    .calculator-wrapper__col.summary
+      .summary__text Ежемесячный платеж
+      h4.summary__summ 1 000 000 руб.
+      .summary__hr
+      +button({
+          label: "Получить кредит"
+      })
