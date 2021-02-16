@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-around;
     width: 705px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     &__column {
         display: flex;
@@ -58,8 +58,8 @@
             &::before,
             &::after {
                 content: "";
-                width: 200px;
-                border: 1px solid $green;
+                width: 206px;
+                border-bottom: 2px solid $green;
                 height: 0px;
                 position: absolute;
                 transform: rotate(180deg);
@@ -90,14 +90,10 @@
 
     }
 
-    &__line {
-        width: 50%;
-        height: 0;
-        border-bottom: 2px solid $green;
-    }
-
     @media screen and (max-width: 800px) {
         flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
 
         &__column {
             flex-direction: row;
