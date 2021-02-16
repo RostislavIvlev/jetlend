@@ -1,0 +1,21 @@
+.logo {
+    display: block;
+
+    &__img {
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
+        &_short {
+            
+            @media (max-width: 1200px) {
+                display: block;
+            }
+
+            @media (min-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+}
