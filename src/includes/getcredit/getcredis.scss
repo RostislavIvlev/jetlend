@@ -1,0 +1,128 @@
+@import "../../scss/main.scss";
+
+.getcredit {
+    
+    &__h2 {
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 41px;
+        color: $white;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.roadmap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 705px;
+    margin-bottom: 100px;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__point{
+        height: 40px;
+        width: 40px;
+        line-height: 38px;
+        text-align: center;
+        color: $white;
+        border: 2px solid $green;
+        border-radius: 50%;
+        position: relative;
+        flex-shrink: 0;
+
+        &_active {
+            background-color: $green;
+            margin-top: -10px;
+
+            &::after {
+                content: "";
+                width: 56px;
+                height: 56px;
+                background-color: rgba(14, 209, 147, 0.4);
+                border-radius: 50%;
+                position: absolute;
+                top: -10px;
+                left: -10px;
+            }
+        }
+
+        &_lines {
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 200px;
+                border: 1px solid $green;
+                height: 0px;
+                position: absolute;
+                transform: rotate(180deg);
+            }
+
+            &::before {
+                top: 20px;
+                left: 0;
+                transform-origin: 0 0 0;
+            }
+
+            &::after {
+                top: 20px;
+                right: 0;
+                transform-origin: 100% 0 0;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        color: $white;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+        opacity: 0.5;
+        max-width: 190px;
+
+    }
+
+    &__line {
+        width: 50%;
+        height: 0;
+        border-bottom: 2px solid $green;
+    }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+
+        &__column {
+            flex-direction: row;
+        }
+
+        &__text {
+            margin-top: 0;
+            margin-left: 40px;
+            text-align: left;
+        }
+
+        &__point {
+            margin: 10px 0;
+
+            &_active {
+                margin-left: -25px;
+            }
+
+            &_lines {
+                
+                &::before,
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
