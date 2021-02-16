@@ -2,3 +2,9 @@
 @import "./utils/vars.scss";
 @import "./utils/libs.scss";
 @import "./utils/mixins";
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
