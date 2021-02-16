@@ -27,6 +27,12 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 80px;
+
+    
+    @media screen and (max-width: 900px) {
+        padding: 50px 20px;
+    }
 }
 
 .row {
@@ -35,4 +41,14 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    &_col-1200 {
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.background {
+    background: radial-gradient(70.23% 381.6% at 6.53% 10.52%, #0A2E37 36.32%, #000000 100%);
 }

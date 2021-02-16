@@ -1,4 +1,4 @@
-.banner
+.banner.container.background
   img.banner__background(src="/assets/images/man-suit.png" width="auto" height="100%")
   .row
     ul.banner-nav
@@ -13,11 +13,14 @@
       img.banner-icon__img(src="/assets/images/sk.svg", alt="SK")
 
   h1.banner__h1 Кредит на пополнение оборотных средств
+  
+  .row
+    ul.banner-list
+      li Сумма до 5 000 000 Р
+      li Ставка от 11% годовых
+      li Срок от 12 месяцев
 
-  ul.banner-list
-    li Сумма до 5 000 000 Р
-    li Ставка от 11% годовых
-    li Срок от 12 месяцев
-  +button({
+  .row
+    +button({
       label: "Получить кредит"
-  })
+    })

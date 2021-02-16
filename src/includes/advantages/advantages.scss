@@ -1,0 +1,35 @@
+@import "../../scss/main.scss";
+
+.advantages {
+
+    &__h2 {
+        font-size: 35px;
+        line-height: 41px;
+        color: $black;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.card {
+    margin: 20px;
+    padding: 40px 50px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #f0f5f6;
+
+    &__title {
+        font-weight: 500;
+        font-size: 25px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: $black;
+        max-width: 300px;
+    }
+}

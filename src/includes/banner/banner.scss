@@ -1,8 +1,6 @@
 @import "../../scss/main.scss";
 
 .banner {
-    background: radial-gradient(70.23% 381.6% at 6.53% 10.52%, #0A2E37 36.32%, #000000 100%);
-    padding: 50px 80px 100px 80px;
     position: relative;
 
     &__h1 {
@@ -71,7 +69,6 @@
 .banner-list {
     display: flex;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 46px;
 
     li {
@@ -99,10 +96,6 @@
 }
 
 @media screen and (max-width: 615px) {
-    .banner {
-        padding: 50px 20px;
-    }
-
     .banner-icon {
         display: none;
     }
