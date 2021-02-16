@@ -22,12 +22,14 @@
         transition: all .5s ease;
     }
 
-    @media screen and (max-width: 900px) {
-        margin-left: auto;
-        margin-right: 15px;
-
-        i {
-            display: none;
+    &_header {
+        @media screen and (max-width: 900px) {
+            margin-left: auto;
+            margin-right: 10px;
+    
+            i {
+                display: none;
+            }
         }
     }
 }

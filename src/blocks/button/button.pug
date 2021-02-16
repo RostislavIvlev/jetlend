@@ -5,7 +5,7 @@ mixin button(options)
     }
     var allMods = "";
     if (typeof(options) !== "undefined" && options.mods) {
-        var modList = mods.split(",");
+        var modList = options.mods.split(" ");
         for (var i = 0; i < modList.length; i++) {
             allMods = allMods + " btn_" + modList[i].trim()
         }
