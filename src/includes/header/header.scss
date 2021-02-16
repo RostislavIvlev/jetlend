@@ -7,7 +7,6 @@
     align-items: center;
     padding: 20px 10px;
     position: relative;
-    width: 100%;
 }
 
 .nav {
@@ -33,6 +32,8 @@
         align-self: flex-start;
         width: 100%;
         padding-left: 15px;
+        transition: all .7s;
+        margin-top: 20px;
     }
 
     @media screen and (max-width: 900px) {

@@ -1,0 +1,23 @@
+.banner
+  img.banner__background(src="/assets/images/man-suit.png" width="auto" height="100%")
+  .row
+    ul.banner-nav
+      li
+        a.banner-nav__link(href="#") Обзор
+      li
+        a.banner-nav__link(href="#") Условия
+      li
+        a.banner-nav__link(href="#") Вопросы
+    .banner-icon
+      img.banner-icon__img(src="/assets/images/bank.svg", alt="Bank RF")
+      img.banner-icon__img(src="/assets/images/sk.svg", alt="SK")
+
+  h1.banner__h1 Кредит на пополнение оборотных средств
+
+  ul.banner-list
+    li Сумма до 5 000 000 Р
+    li Ставка от 11% годовых
+    li Срок от 12 месяцев
+  +button({
+      label: "Получить кредит"
+  })

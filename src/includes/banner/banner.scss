@@ -1,0 +1,109 @@
+@import "../../scss/main.scss";
+
+.banner {
+    background: radial-gradient(70.23% 381.6% at 6.53% 10.52%, #0A2E37 36.32%, #000000 100%);
+    padding: 50px 80px 100px 80px;
+    position: relative;
+
+    &__h1 {
+        align-self: flex-start;
+        font-weight: 400;
+        font-size: 75px;
+        line-height: 88px;
+        color: $white;
+        width: 60%;
+
+        @media screen and (max-width: 1310px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 40px;
+            line-height: 55px;
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+
+    &__background {
+        position: absolute;
+        bottom: 0;
+        right: 250px;
+
+        @media screen and (max-width: 1500px) {
+            display: none;
+        }
+    }
+}
+
+.banner-nav {
+    display: flex;
+
+    li {
+        &:nth-child(2){
+            border-left: 2px solid $green;
+            border-right: 2px solid $green;
+        }
+    }
+
+    &__link {
+        margin: 0 10px;
+        padding: auto;
+        color: $white;
+
+        &:hover {
+            border-bottom: 2px solid $green;
+        }
+    }
+}
+
+.banner-icon {
+    &__img {
+        margin: 0 10px;
+    }
+}
+
+.banner-list {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 46px;
+
+    li {
+        color: $white;
+        margin: 0 30px;
+        line-height: 25px;
+        font-size: 19px;
+
+
+        &::before {
+            content: "\2022";
+            color: $green;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .banner-icon {
+        display: none;
+    }
+}
