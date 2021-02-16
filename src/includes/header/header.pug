@@ -1,0 +1,22 @@
+header 
+  .header-wrapper
+    include ../../blocks/logo/logo
+
+    ul.nav#collapse
+      li.nav__item
+        a.nav__link(href="#") Инвесторам
+      li.nav__item
+        a.nav__link(href="#") Предпринимателям
+      li.nav__item
+        a.nav__link(href="#") О платформе
+      li.nav__item
+        a.nav__link(href="#") Новости
+    
+    +button({
+        label: "Войти",
+        icon: "fas fa-sign-in-alt",
+        mods: "header"
+    })
+
+    button.nav-btn
+      i.fas.fa-bars
